@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpenter Business</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background: #222;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #f4a261;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #f4a261;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      border: none;
+      background: #f4a261;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background: #e76f51;
+    }
+
+    /* Section */
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service-box {
+      width: 250px;
+      margin: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+      background: #ffe8d6;
+    }
+
+    /* About */
+    .about {
+      background: #f4f4f4;
+    }
+
+    /* Contact */
+    .contact input, .contact textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background: #f4a261;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media(max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>WoodCraft</h2>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div>
+    <h1>Expert Carpentry Services</h1>
+    <p>Custom Furniture | Home Renovation | Woodwork</p>
+    <button>Get a Quote</button>
+  </div>
+</div>
+
+<!-- Services -->
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3>Custom Furniture</h3>
+      <p>Beautiful handmade furniture tailored to your needs.</p>
+    </div>
+    <div class="service-box">
+      <h3>Home Renovation</h3>
+      <p>Upgrade your home with expert carpentry solutions.</p>
+    </div>
+    <div class="service-box">
+      <h3>Wood Repair</h3>
+      <p>Fix and restore old furniture to like-new condition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <h2>About Us</h2>
+  <p>We are skilled carpenters with years of experience in crafting high-quality woodwork. Our goal is to deliver durable and stylish solutions for your home.</p>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea rows="5" placeholder="Your Message"></textarea><br>
+  <button>Send Message</button>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 WoodCraft | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

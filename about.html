@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - WoodCraft</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+      background: #222;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #f4a261;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #f4a261;
+    }
+
+    /* Header */
+    .header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px 40px;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* OWNER IMAGE */
+    .owner-photo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .owner-photo img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #ddd;
+    }
+
+    /* WORKSHOP */
+    .workshop {
+      padding: 50px 40px;
+      background: white;
+      text-align: center;
+    }
+
+    .workshop h2 {
+      margin-bottom: 30px;
+    }
+
+    .workshop-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .workshop-images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #eee;
+      transition: 0.3s;
+    }
+
+    .workshop-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* WHY */
+    .why {
+      background: #f4a261;
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    .why-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media(max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>WoodCraft</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>About Us</h1>
+  <p>Crafting Quality Woodwork with Passion</p>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+
+  <div class="about-text">
+    <h2>Who We Are</h2>
+    <p>
+      We are <strong>WoodCraft</strong>, a professional carpentry business based in Chirawa, Kutubpura.
+      We specialize in custom furniture, home interiors, and wood repair services.
+    </p>
+    <p>
+      Our goal is to deliver strong, stylish, and long-lasting woodwork for every customer.
+    </p>
+  </div>
+
+  <!-- OWNER IMAGE (UPLOAD YOUR PHOTO HERE) -->
+  <div class="owner-photo">
+    <img src="Gaju.png" alt="Owner Photo">
+  </div>
+
+</section>
+
+<!-- WORKSHOP PHOTOS -->
+<section class="workshop">
+  <h2>Our Workshop</h2>
+
+  <div class="workshop-images">
+
+    <!-- UPLOAD YOUR WORKSHOP PHOTOS HERE -->
+    <img src="workshop1.png" alt="Workshop 1">
+    <img src="workshop2.png" alt="Workshop 2">
+    <img src="workshop3.png" alt="Workshop 3">
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+  <h2>Why Choose Us</h2>
+
+  <div class="why-boxes">
+    <div class="box">
+      <h3>Skilled Work</h3>
+      <p>Expert carpentry with years of experience.</p>
+    </div>
+
+    <div class="box">
+      <h3>Best Quality</h3>
+      <p>We use strong and durable wood.</p>
+    </div>
+
+    <div class="box">
+      <h3>Affordable Price</h3>
+      <p>High quality work at fair prices.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 WoodCraft | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
